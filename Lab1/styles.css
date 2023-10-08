@@ -1,0 +1,33 @@
+*{
+    padding: 1;
+    margin: 1;
+    
+}
+
+.box_1 {
+    padding: 4em;
+    background-color: #EB5757;
+    border: 0em solid #27AE60;
+    margin: 0.5em;
+}
+
+.box_2 {
+    padding: 4em;
+    background-color: #2d9cdb;
+    border: 0em solid #27AE60;
+    margin: 0.5em;
+}
+
+.box_3 {
+    padding: 4em;
+    background-color: #00FF00;
+    border: 0em solid #27AE60;
+    margin: 0.5em;    
+}
+
+#box {
+    padding: 4em;
+    background-color: #ebef0f;
+    border: 0em solid #27AE60;
+    margin: 0.5em;    
+}
