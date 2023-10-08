@@ -42,18 +42,12 @@ for (let i = 0; i < headers.length; i++){
     headers[i].innerText = phrases[generatePhrase()];
 }
 
-const header_tags = document.querySelectorAll('h1');
 const divs = document.querySelectorAll("div");
-
-header_tags.forEach(h1 => {
-    h1.style.backgroundColor = 'blue';
-});
 
 divs.forEach(div => {
     div.style.backgroundColor = 'blue';
 
 });
-
 
 const p = document.getElementsByTagName("p");
 for (let i = 0; i < p.length; i++){
@@ -64,11 +58,5 @@ const span = document.getElementsByTagName("span");
 for (let i = 0; i < span.length; i++) {
     span[i].innerText = phrases[generatePhrase()];
 }
-
-const links = document.getElementsByTagName("a");
-for (let i = 0; i < links.length; i++) {
-    links[i].href = "https://www.youtube.com/watch?v=Rvi6c8toWJM";
-}
-
 
 
