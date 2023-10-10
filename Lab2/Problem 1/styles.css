@@ -1,28 +1,32 @@
 
+* {
+    margin: 0;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    border: 1px solid black;
-    width: 100%;
-
+    border: 1px solid blue;
 }
 
 .box {
-    border: 1px solid black;
-    padding: 5px;
+    border: 2px solid black;
 }
 
 .nestedGrid {
     display: grid;
-   
-    border: 1px solid black;
-    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid rgb(0, 208, 255);
+    height: 100%;
 }
 
 .nestedCell{
-    display: grid;
+    height: 100px;
     border: 1px solid black;
     text-align: center;
+    background-color: rgb(73, 255, 7);
+    text-decoration-line: underline;
+    color: red;
 }
 
 @media screen and (max-width: 960px) {
@@ -31,7 +35,7 @@
     }
   }
 
-  @media screen  and (max-width: 640px) {
+@media screen  and (max-width: 640px) {
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
