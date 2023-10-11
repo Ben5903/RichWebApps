@@ -2,6 +2,8 @@ const notesContainer = document.getElementById('notes-container');
 const noteInput = document.getElementById('note-input');
 const colourSelect = document.getElementById('colour-select');
 
+
+// function to add note
 function addNote() {
   const noteText = noteInput.value.trim();
   const colour = colourSelect.value;
@@ -11,6 +13,8 @@ function addNote() {
     return;
   }
 
+
+  // to change the div colour of the note
   const noteElement = document.createElement('div');
   noteElement.classList.add('note', colour);
   noteElement.textContent = noteText;
@@ -21,7 +25,7 @@ function addNote() {
   noteInput.value = '';
 }
 
-
+// to edit note
 function editNote() {
     const selectedNote = notesContainer.querySelector('.selected');
     if (!selectedNote) {
@@ -31,7 +35,8 @@ function editNote() {
 
     const noteText = noteInput.value.trim();
     const colour = colourSelect.value;
-
+    
+    // validation if a text contains no input
     if (noteText === '') {
       alert('Please enter a new note text.');
       return;
@@ -44,8 +49,12 @@ function editNote() {
     noteInput.value = '';
 }
 
+// function to delete a note
 function deleteNote() {
+    // checks for a note to be selected
     const selectedNote = notesContainer.querySelector('.selected');
+
+    // validation if no note is selected
     if (!selectedNote) {
       alert('Please select a note to delete.');
       return;

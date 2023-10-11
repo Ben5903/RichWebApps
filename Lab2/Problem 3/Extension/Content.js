@@ -24,36 +24,44 @@ let phrases = [
     "They're gonna wish they were never born.",
     "Gear up; We aren't going on a windy walk here!"
 ]
-
+// randomises the phrase which is displayed on screen to the user
 function generatePhrase() {
     const ct_phrase = Math.floor(Math.random() * phrases.length);
     return ct_phrase;
 }
 
+// selects the images of the webpage and changes them the "ct" images provided
 const imgs = document.getElementsByTagName("img");
 for(let i = 0; i < imgs.length; i++) {
     const ct_images = Math.floor(Math.random() * ct.length)
     imgs[i].src = ct[ct_images]
 }
 
-
+// selects the h1 tags in the webpage and changes the headings to phrases
 const headers = document.getElementsByTagName("h1");
 for (let i = 0; i < headers.length; i++){
     headers[i].innerText = phrases[generatePhrase()];
 }
 
+
+// selects all div tags
 const divs = document.querySelectorAll("div");
 
+
+// changes the background of each div element to blue
 divs.forEach(div => {
     div.style.backgroundColor = 'blue';
 
 });
 
+
+// changes all p tags to a phrase 
 const p = document.getElementsByTagName("p");
 for (let i = 0; i < p.length; i++){
     p[i].innerText = phrases[generatePhrase()];
 }
 
+// changes all span tags to phrase
 const span = document.getElementsByTagName("span");
 for (let i = 0; i < span.length; i++) {
     span[i].innerText = phrases[generatePhrase()];
