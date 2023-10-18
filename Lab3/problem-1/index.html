@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Phone Directory</title>
+</head>
+<body>
+    <h1>Phone Directory</h1>
+    <div class="infoBox">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="mobile" placeholder="Mobile">
+        <input type="text" id="email" placeholder="Email">
+        <button onclick="addContact()">Add Contact</button>
+    </div>
+
+    <br><br>
+    <p>Search contact by Mobile No:</p>
+    <input type="text" id="search" placeholder="Search by Mobile" oninput="filterTable()">
+
+
+    <br><br>
+    <div id="error">Please correct the errors in the input</div>
+    <div id="noResult">No matching contacts found in the list</div>
+
+    <table id="contactTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Name</th>
+                <th>Mobile</th>
+                <th>Email   </th>
+            </tr>
+        </thead>
+        <tbody id="contactList"></tbody>
+    </table>
+    <script src="scripts.js"></script>
+</body>
+</html>
