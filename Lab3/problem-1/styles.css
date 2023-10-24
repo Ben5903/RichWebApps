@@ -2,6 +2,7 @@ body {
     text-align: center; /* Center the content horizontally */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 table {
@@ -38,3 +39,38 @@ tr:nth-child(odd) {
 
 }
 
+#search {
+    border-radius: 5px; 
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+
+}
+
+#name {
+    border-radius: 5px; 
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+#mobile {
+    border-radius: 5px; 
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+#email {
+    border-radius: 5px; 
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
+
+button {
+    border-radius: 5px; 
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid black;
+}
