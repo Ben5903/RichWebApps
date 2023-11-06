@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Github Search Page</title>
+</head>
+<body>
+<header>Ben's Github Username Searching Website</header>
+
+    <div id="search">
+        <input type="text" id="username" placeholder="Enter Github username">
+        <button id="search_button">Search</button>
+    </div>
+    <br><br>
+    <div id="results">
+        <div id="user_container">
+            <img id="profile-pic" src="" alt="Profile-pic">
+            <h3 id="name"></h3>
+            <p id="user-info"></p>
+        </div>
+        <br><br>
+
+        <div id="repoList">
+            <h3>Repositories:</h3>
+            <ul id="repos"></ul>
+        </div>
+    </div>
+    <p id="error-message"></p>
+    <script src="scripts.js"></script>    
+</body>
+</html>
