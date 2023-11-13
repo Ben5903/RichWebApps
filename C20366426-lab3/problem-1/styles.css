@@ -1,0 +1,68 @@
+.note {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+#main {
+    text-align: center;
+    background-color: lightgrey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.note.red {
+    background-color: #ff9999;
+    border: 2px solid black;
+}
+
+.note.green {
+    background-color: #99ff99;
+    border: 2px solid black;
+}
+
+.note.blue {
+    background-color: #9999ff;
+    border: 2px solid black;
+}
+
+.note.purple {
+    background-color: #8400ff;
+    border: 2px solid black;
+}
+
+.note.orange {
+    background-color: #ff9500;
+    border: 2px solid black;
+}
+
+.note.cyan {
+    background-color: #00fbff;
+    border: 2px solid black;
+}
+
+.note.pink {
+    background-color: #f472ee;
+    border: 2px solid black;
+}
+
+.note.yellow {
+    background-color: #f5ff99;
+    border: 2px solid black;
+}
+
+  /* Button styles */
+.button {
+    width: 20%;
+    padding: 12px;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Courier New', Courier, monospace;
+
+}
