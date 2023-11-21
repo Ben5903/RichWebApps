@@ -1,4 +1,4 @@
-const { fromEvent, Observable } = rxjs;
+const { Observable } = rxjs;
 const notesContainer = document.getElementById('notes-container');
 const noteInput = document.getElementById('note-input');
 const colourSelect = document.getElementById('colour-select');
