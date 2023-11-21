@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Note Taking App</title>
+</head>
+<body>
+    <div id="main">
+        <div id="message-container"></div>
+        <textarea id="note-input" placeholder="Enter note here"></textarea>
+        <br>
+        <label for="colour-select">Select a colour:</label>
+        <select id="colour-select">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+            <option value="cyan">Cyan</option>
+            <option value="pink">Pink</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        <br><br>
+        <button class="button button-add">Add note</button>
+        <button class="button button-edit">Edit note</button>
+        <button class="button button-delete">Delete note</button>
+
+        <div id="notes-container"></div>
+    </div>
+    <!-- Include RxJS script -->
+    <script src="./../node_modules/rxjs/dist/bundles/rxjs.umd.min.js"></script> 
+    <!-- Include your script -->
+    <script src="scripts.js"></script>
+</body>
+</html>
