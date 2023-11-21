@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Countdown Timer</title>
+
+</head>
+<body>
+
+    <h1>Countdown Timer</h1>
+
+    <label for="hours"></label>
+    <input type="number" id="hours" min="0" step="1" placeholder="H">
+    :
+    <label for="minutes"></label>
+    <input type="number" id="minutes" min="0" max="59" step="1" placeholder="M">
+    :
+    <label for="seconds"></label>
+    <input type="number" id="seconds" min="0" max="59" step="1" placeholder="S">
+    <br><br>
+    <button onclick="startCountdown()">Start Countdown</button>
+    <script src="./../node_modules/rxjs/dist/bundles/rxjs.umd.min.js"></script>
+    <br>
+    <div id="timer"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
