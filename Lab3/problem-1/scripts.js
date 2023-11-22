@@ -1,4 +1,4 @@
-
+const search = document.getElementById("search");
 // To store the contact information
 let contacts = [];
 
@@ -73,7 +73,7 @@ function sortTable(column) {
 
 
 // Filter the table based on the search input
-function filterTable() {
+search.addEventListener("input", function() {
     const searchTerm = document.getElementById("search").value;
 
     // Filter contacts based on the mobile number search term
@@ -87,4 +87,4 @@ function filterTable() {
     } else {
         document.getElementById("noResult").style.display = "none";
     }
-}
+})

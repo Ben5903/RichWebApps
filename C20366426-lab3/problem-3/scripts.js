@@ -40,7 +40,6 @@ function addNote() {
 
 // define a function to edit the current note
 function editNote() {
-    // check if there is a current note
     if (selectedNote) {
         // prompt the user to enter the edited text, with the current note text as default
         const editedText = prompt("Edit note text", selectedNote.text);
@@ -70,7 +69,6 @@ function deleteNote() {
 
 // define a function to update the buttons state
 function updateButtons() {
-    // check if there is a current note
     if (selectedNote) {
         // enable the edit and delete buttons
         editButton.disabled = !selectedNote;
@@ -80,7 +78,6 @@ function updateButtons() {
 
 // define a class to represent a note
 class Note {
-    // define a constructor that takes the text, colour, and parent of the note
     constructor(text, colour, parent = null) {
         // assign the properties to the instance
         this.text = text;
@@ -101,7 +98,6 @@ class Note {
 
     // define a method to create a new note element
     createNewNote() {
-        // create a div element
         const newNote = document.createElement("div");
         // add the note class to it
         newNote.className = "note";
