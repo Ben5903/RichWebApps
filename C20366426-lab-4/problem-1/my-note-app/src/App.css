@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  align-items: center;
+  min-height: 70vh;
+  background-color: #f0f0f0;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+.note-container {
+  width: 48%;
+  /* Adjusted width to make room for synonyms container */
+  margin-right: 4%;
+  /* Added margin to create space between containers */
+}
+
+.synonyms-container {
+  width: 48%;
+  /* Adjusted width to make room for note container */
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.synonyms-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.synonyms-output {
+  display: block;
+  margin-left: 50px;
+}
+
+
+
+textarea {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.synonyms-input {
+  width: 100%;
+  padding: 10px;
+}
+
+.clear-synonyms {
+  display: block;
+
+}
+select {
+  width: 100%;
+  padding: 15px;
+}
+
+button {
+  background-color: #000000;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+  display: block;
+}
+
+button:hover {
+  background-color: #5645a0;
+}
+
+.note {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 5px;
+  display: block;
+  border-radius: 4px;
+}
+
+.selected {
+  border: 2px solid #4caf50;
+}
