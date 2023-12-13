@@ -1,8 +1,6 @@
-
 import React, { useState } from 'react';
 import './App.css';
 import Synonyms from './Synonyms';
-
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -11,7 +9,7 @@ function App() {
   const [colour, setColour] = useState('red');
   const [wordForSynonyms, setWordForSynonyms] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
-
+  const [sortCriteria, setSortCriteria] = useState('none'); // Added sorting criteria state
 
   const addNote = () => {
     if (noteText.trim() === '') {
@@ -19,7 +17,7 @@ function App() {
       return;
     }
 
-    const newNote = { text: noteText, colour };
+    const newNote = { text: noteText, colour, date: new Date() }; // Added date property
     setNotes([...notes, newNote]);
     setNoteText('');
   };
@@ -65,6 +63,17 @@ function App() {
     <div className='container'>
       <div className='note-container'>
         <h1>Ben's Note Taking Application</h1>
+        <label htmlFor="sort-select">Sort by:</label>
+        <select
+          id="sort-select"
+          value={sortCriteria}
+          onChange={(e) => setSortCriteria(e.target.value)}
+        >
+          <option value="none">None</option>
+          <option value="date">Date</option>
+          <option value="alphabetical">Alphabetical</option>
+          <option value="color">Color</option>
+        </select>
         <input
           className='search'
           type="text"
@@ -101,7 +110,21 @@ function App() {
 
         <div>
           {notes
-            .filter((note) => note.text.toLowerCase().includes(searchTerm.toLowerCase()))
+            .filter((note) =>
+              note.text.toLowerCase().includes(searchTerm.toLowerCase())
+            )
+            .sort((a, b) => {
+              switch (sortCriteria) {
+                case 'date':
+                  return new Date(b.date) - new Date(a.date);
+                case 'alphabetical':
+                  return a.text.localeCompare(b.text);
+                case 'color':
+                  return a.colour.localeCompare(b.colour);
+                default:
+                  return 0;
+              }
+            })
             .map((note, index) => (
               <div
                 key={index}
@@ -133,6 +156,6 @@ function App() {
       </div>
     </div>
   );
-};
+}
 
 export default App;
