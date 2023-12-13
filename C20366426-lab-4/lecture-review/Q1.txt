@@ -1,0 +1,28 @@
+Question 1:
+
+Props: Used for passing data from a parent component to a child component. 
+Props are immutable.
+
+JavaScript:
+
+// ParentComponent.js
+<ChildComponent name="Ben" />
+
+// ChildComponent.js
+<p>Hello, {this.props.name}!</p>
+
+
+
+State: Used for managing mutable data within a component. 
+State can be changed using setState and triggers re-renders.
+
+JavaScript:
+
+this.state = { count: 0 };
+
+incrementCount = () => {
+  this.setState((prevState) => ({ count: prevState.count + 1 }));
+};
+
+<p>Count: {this.state.count}</p>
+<button onClick={this.incrementCount}>Increment</button>

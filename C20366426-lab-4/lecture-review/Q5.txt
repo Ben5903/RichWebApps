@@ -1,0 +1,29 @@
+Question 5:
+
+1) User Input:
+User enters a URL in the browser.
+
+2) Browser Actions:
+Browser performs DNS resolution and sends an HTTP request to the server.
+
+
+3) Server Responds:
+Server processes the request and sends back HTML and other resources.
+
+4) Rendering Begins:
+Browser parses HTML, constructs a render tree, and starts rendering.
+
+5) JavaScript Execution:
+Synchronous scripts are executed, and the browser continues rendering.
+
+6) Resource Download (Asynchronous):
+Browser asynchronously fetches external resources (scripts, stylesheets).
+
+7) JavaScript Execution (Asynchronous):
+Asynchronous scripts are executed, potentially modifying the DOM.
+
+8) Application Initialization:
+JavaScript code initializes the rich web application.
+
+9) User Interaction:
+User interacts with the fully loaded and initialized application.

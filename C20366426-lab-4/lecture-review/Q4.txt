@@ -1,0 +1,65 @@
+Question 4:
+
+The CSS Box Model is a fundamental concept in web development that describes the layout and spacing of HTML elements on a webpage. It consists of the content area, padding, border, and margin. Here's a diagram illustrating the CSS Box Model:
+
++-----------------------------+
+|            Margin           |
+|                             |
+|   +---------------------+   |
+|   |        Border       |   |
+|   |                     |   |
+|   |   +-------------+   |   |
+|   |   |  Padding    |   |   |
+|   |   |             |   |   |
+|   |   |  +-------+  |   |   |
+|   |   |  |Content|  |   |   |
+|   |   |  +-------+  |   |   |
+|   |   +-------------+   |   |
+|   +---------------------+   |
+|                             |
++-----------------------------+
+
+Content: The actual content of the box, such as text or images.
+
+Padding: Clears an area around the content inside the border. The padding is transparent.
+
+Border: A border surrounding the padding (if any) and content.
+
+Margin: Clears an area outside the border. The margin is transparent.
+
+
+
+Example Code:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Apply styles to a box with spacing using the Box Model */
+    .box {
+      width: 100px;
+      height: 50px;
+      padding: 10px;
+      border: 2px solid #333;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Box 1 -->
+  <div class="box">
+    <p>Box 1</p>
+  </div>
+
+  <!-- Box 2 -->
+  <div class="box">
+    <p>Box 2</p>
+  </div>
+</body>
+</html>
+
+The .box class represents a box with a specified width, height, padding, border, and margin.
+
+Two boxes are created using the same class, demonstrating how you can apply the same styling to multiple elements.

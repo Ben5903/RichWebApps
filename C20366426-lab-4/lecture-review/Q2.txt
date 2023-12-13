@@ -1,0 +1,10 @@
+Question 2:
+
+
+In functional programming, a functor is an object or data structure with a map function, allowing you to apply a function to its values. It maintains the structure while transforming the values. An example in JavaScript using an array:
+
+const myArray = [1, 2, 3, 4];
+const mappedArray = myArray.map((value) => value * 2);
+// Output: [2, 4, 6, 8]
+
+Functors follow laws: Identity Law and Composition Law, ensuring consistent behaviour.

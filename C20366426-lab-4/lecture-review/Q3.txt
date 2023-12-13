@@ -1,0 +1,25 @@
+Callbacks
+Advantage: 
+    simple and Widely Supported: Call backs are straightforward and have been around for a long time. They are supported in many environments and libraries.
+
+Disadvantage:
+    Callback Hell (Pyramid of Doom): Asynchronous operations can lead to nested callbacks, making the code harder to read and maintain, a phenomenon known as "callback hell" or "Pyramid of Doom."
+
+
+Promises
+Advantage: 
+    Callback Hell (Pyramid of Doom): Asynchronous operations can lead to nested callbacks, making the code harder to read and maintain, a phenomenon known as "callback hell" or "Pyramid of Doom."
+
+Disadvantage:
+    No Cancellation: Promises lack built-in cancellation support. Once a promise is initiated, it will eventually resolve or reject, and canceling it requires additional patterns or external libraries.
+
+
+Streams
+Advantage:
+    Backpressure Handling: Streams allow for backpressure handling, which means that the receiver can control the rate at which it consumes data. This is especially useful in scenarios where the producer is faster than the consumer.
+
+Disadvantage:
+    Complexity: Working with streams, especially in more complex scenarios, can introduce a level of complexity that might not be necessary for simpler asynchronous tasks. Understanding and implementing streams may have a steeper learning curve.
+
+
+
